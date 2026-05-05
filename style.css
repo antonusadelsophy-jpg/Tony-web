@@ -144,8 +144,8 @@ cursor:pointer;
   font-weight:bolder;
 }
 .q p{
-  background:#fff;
-  color:gold;
+  background:gold;
+  color:green;
   font-family:Courier,Arial;
   font-size:16px;
   text-align:center;
