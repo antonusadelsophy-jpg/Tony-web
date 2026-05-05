@@ -1,0 +1,154 @@
+/* Reset بسيط */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background-color: #f50000;
+  font-family: Arial, sans-serif;
+}
+
+/* Container */
+ .container {
+  display: flex;
+  gap: 20px;
+}
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Layout */
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.child {
+  flex: 1 1 300px;
+}
+.cards {
+  display: flex;
+  gap: 25px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #111;
+}
+
+.navbar h2 {
+  color: #00ff99;
+}
+
+.navbar a {
+  color: #00ff99;
+  margin-left: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+/* عناصر خاصة */
+.br{
+  margin:auto;
+  padding:0px 40px;
+}
+  header{padding:100px;display:flex;justify-content:space-between}
+.w{
+  font-size:35px;
+  text-align:center;
+}
+.x {
+  color: gold;
+  background: #000a34;
+  font-family: Courier, Arial;
+  border: 3px solid white;
+  padding: 10px 15px;
+  margin: 20px auto;
+  text-align: center;
+  max-width: 400px;
+}
+::selection{
+  background:red;
+ color:green;
+}
+.z {
+  color: yellow;
+  font-family: Arial;
+  text-align:right;
+  font-size:18px;
+  line-height:35px;
+}
+
+/* 📱 موبايل */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .parent {
+    flex-direction: column;
+  }
+
+  .child {
+    flex: 1 1 100%;
+  }
+
+  .container {
+    width: 95%;
+  }
+}
+.btn{background:#38bdf8;
+padding:15px 25px;
+text-align:center;
+border-radius:30px;
+color:#000;
+text-decoration:none;
+font-size:25px;
+cursor:pointer;
+ }
+ .btn:hover{
+  background:red;
+  color:green;
+}
+.a{
+  color:green;
+  text-align:center;
+  font-size:35px;
+  font-family:Arial;
+  font-weight:bolder;
+}
+.q p{
+  background:#fff;
+  color:gold;
+  font-family:Courier,Arial;
+  font-size:16px;
+  text-align:center;
+}
+
+

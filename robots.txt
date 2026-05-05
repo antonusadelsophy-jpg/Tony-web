@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://antonusadelsophy-jpg.github.io/Tony web/sitemap.xml
