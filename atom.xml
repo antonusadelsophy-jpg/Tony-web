@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Tony Web</title>
+  <link href="https://antonusadelsophy-jpg.github.io/Tony-web/"/>
+  <updated>2026-05-05T12:00:00Z</updated>
+  <id>https://antonusadelsophy-jpg.github.io/Tony-web/</id>
+
+  <entry>
+    <title>تصميم مواقع احترافية</title>
+    <link href="https://antonusadelsophy-jpg.github.io/Tony-web/"/>
+    <id>home</id>
+    <updated>2026-05-05T12:00:00Z</updated>
+    <summary>مواقع احترافية سريعة ومتوافقة مع جميع الأجهزة</summary>
+  </entry>
+
+</feed>
