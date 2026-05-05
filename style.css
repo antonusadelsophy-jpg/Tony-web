@@ -146,6 +146,7 @@ cursor:pointer;
 .q p{
   background:green;
   color:red;
+  font-weidth:bolder;
   font-family:Courier,Arial;
   font-size:16px;
   text-align:center;
