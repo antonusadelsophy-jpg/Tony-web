@@ -47,13 +47,15 @@ body {
 }
 
 /* Section */
-section {
-  height: 100vh;
+section{
+  height:80vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 60px;
-  color:red;
+  direction:center;
+  padding:110px 0px;
+  margin:auto;
+  max-width:1200px;
 }
 
 
@@ -146,12 +148,35 @@ img {
   background:red;
  color:green;
 }
+.sas {
+  font-size:50px ;
+  font-family:Arial,Sans-Serif,Cairo;
+  text-align:center;
+  text-decoration: none;
+  background :#ffff ;
+  color:red;
+  height:40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:50px;
+  padding:10px 100px;
+  margin:300px 100px;
+  max-width:100px;
+  gap:20px;
+  cursor:pointer;
+}
+.sas:hover{
+  background:red;
+  color:white;
+}
 .z {
   color: yellow;
   font-family: Arial;
   text-align:right;
-  font-size:18px;
+  font-size:20px;
   line-height:35px;
+  padding:250px 0px;
 }
 
 /* 📱 موبايل */
@@ -204,10 +229,10 @@ cursor:pointer;
   font-weight:bolder;
 }
 .q p{
-  background:green;
+  background:#ffff;
   color:red;
   font-family:Courier,Arial;
-  font-size:16px;
+  font-size:25px;
   text-align:center;
 }
 
