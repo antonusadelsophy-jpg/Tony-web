@@ -12,7 +12,6 @@ body {
   transform: translateX(-50%);
   padding: 10px 20px;
   border-radius: 50px;
-
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -153,8 +152,8 @@ img {
   font-family:Arial,Sans-Serif,Cairo;
   text-align:center;
   text-decoration: none;
-  background :#ffff ;
-  color:red;
+   color:red;
+   background-color:#000010;
   height:40px;
   display: flex;
   justify-content: center;
@@ -164,13 +163,52 @@ img {
   margin:300px 100px;
   max-width:100px;
   gap:20px;
-  cursor:pointer;
+   cursor:pointer;
 }
 .sas:hover{
-  background:red;
+  
+    background:red;
   color:white;
 }
-.z {
+.o{
+  width:150px;
+  height:35px;
+  letter-spacing:15px;
+  padding:10px;
+  border:5px;
+  font-size:40px;
+  font-family:Courier;
+  font-weight:bolder;
+  position: relative;
+  animation-name: tony;
+  animation-duration: 4s;
+  animation-delay:2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction:narmal;
+}
+@keyframes tony {
+  0% {
+  color: red;
+  left: 25%;
+  transform:rotate(180deg)a;
+ }
+  100% {
+    color:green;
+    left:25%;
+    transform:rotate(360deg);
+   }
+}
+div a{
+  text-decoration:none;
+  color:green;
+  cursor:pointer;
+}
+div a:hover{
+  color:red;
+  font-size:60px;
+}
+ .z {
   color: yellow;
   font-family: Arial;
   text-align:right;
