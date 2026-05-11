@@ -124,6 +124,10 @@ img {
 }
 
 /* عناصر خاصة */
+.su{
+  color:red;
+}
+
 .br{
   margin:auto;
   padding:0px 40px;
