@@ -11,8 +11,12 @@
     nav a{color:#fff;margin:10px;text-decoration:none}
 
     .hero{height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
-    .hero h2{font-size:42px;margin-bottom:15px}
-    .btn{background:#38bdf8;padding:15px 25px;border-radius:30px;color:#000;text-decoration:none}
+ .hero h2{font-size:42px;margin-bottom:15px}
+  .btn{background:#38bdf8;
+ padding:15px 25px;border-radius:30px;
+  margin-top:50px;
+  ;color:#000;text-decoration:none
+    }
 
     section{padding:60px 20px;text-align:center}
    section a{
@@ -68,11 +72,53 @@
 }
 .s{color:red;
   font-family:serif,Arial;
+  font-width:15px;
   
+  background:rgb(80,34,0);
+  height:380px;
+  width
+  padding:200px 80px;
+ 
+}
+ .bot{
+  background:#001685;
+  color:gold;
+  border-radius:100px;
+  border:green solid 2px;
+}
+.bot:hover{
+  background:red;
+  color:white;
+  cursor:pointer;
+  font-size:20px;
+} 
+#name{
+  color:red;
+ }
+#name:hover{
+  background:gold;
+  font-size:18px;
+  cursor:pointer;
+  border:green solid 2px;
+}
+#email{
+color:red; }
+#email:hover{
+  background:gold;
+  font-size:18px;
+  cursor:pointer;
+  border:red 1px solid;
+}
+#message{ color:red;}
+#message:hover{
+  background:gold;
+  font-size:18px;
+  cursor:pointer;
+  border:red 1px solid;
 }
   </style></head>
 <body>
-   <nav class="navbar">
+  <nav class="navbar">
   <ul>
     <li><a href="#">Home</a></li>
     <li><a href="services.html">Services</a></li>
@@ -81,7 +127,8 @@
 </nav>
 <section class="s">
 <h1>📞⬅Contact Tony</h1>
-</section>
+ <p>تواصل معنا الآن</p>
+ </section>
  <section class="hero">
   <h2>خلي عندك موقع يبيع بدل ما يضيع 🔥</h2>
   <p>تصميم مواقع احترافية لأي نشاط</p>
@@ -95,24 +142,31 @@
   </div>
  <section id="contact">
   <h2>تواصل معايا</h2>
-  <p>كلمني على واتساب</p>
+  <p>ooo </p>
   <a href="https://wa.me/201206014362" class="btn">واتساب</a>
-</section><footer>
-  <p>© 2026 Antonus</p>
-</footer><!-- صفحة تواصل احترافية --><section id="contact-page" style="padding:60px 20px;text-align:center;background:#020617;">
+</section><!-- صفحة تواصل احترافية --><section id="contact-page" style="padding:60px 20px;margin-bottom:-200px;
+  text-align:center;background:#020617;">
   <h2 style="margin-bottom:20px">تواصل معايا 🚀</h2>
-  <p style="margin-bottom:30px">سيب بياناتك وهرد عليك في أسرع وقت</p>  <form style="max-width:500px;margin:auto;display:flex;flex-direction:column;gap:15px">
-    <input type="text" placeholder="اسمك" required style="padding:12px;border:none;border-radius:10px">
-    <input type="email" placeholder="الإيميل" required style="padding:12px;border:none;border-radius:10px">
-    <input type="text" placeholder="رقم الهاتف" style="padding:12px;border:none;border-radius:10px">
-    <textarea placeholder="اكتب رسالتك" rows="5" required style="padding:12px;border:none;border-radius:10px"></textarea>
-<a href="https://wa.me/201206014362" class="btn" style="margin:10px;display:inline-block">
-   <button type="submit" style="padding:15px;border:none;border-radius:30px;background:#38bdf8;font-weight:bold;cursor:pointer">إرسال</button>
-  </a>
-  </form>  <div style="margin-top:40px">
+  <p style="margin-bottom:30px">سيب بياناتك وهرد عليك في أسرع وقت</p>  
+  
+  
+    <form onsubmit="sendWhatsApp(event)"style="max-width:500px;margin:auto;display:flex;flex-direction:column;gap:15px">
+        <input type="text" id="name" placeholder="اسمك" required 
+        style="padding:12px;border:red solid 1px;border-radius:10px">
+        <input type="email" id="email" placeholder="بريدك الإلكتروني" required style="padding:12px; border:red 1px solid;border-radius:10px">
+  <textarea id="message" placeholder="اكتب رسالتك..." required 
+ style="padding:12px;  border:red 1px solid;border-radius:10px"></textarea>
+
+ <button type="submit" class="bot";>إرسال</button>
+    </form>
+  
+  
+  
     <p>أو تواصل مباشر:</p>
     <a href="https://wa.me/201206014362" class="btn" style="margin:10px;display:inline-block">واتساب</a>
     <a href="https://www.facebook.com/Antonusadel.012?mibextid=ZbWKwL" class="btn" style="margin:10px;display:inline-block;background:#1877f2;color:#fff">فيسبوك</a>
-  </div>
-</section></body>
+  <p>© 2026 Antonus</p>
+</div>
+</section>
+</body>
 </html>

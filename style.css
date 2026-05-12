@@ -6,12 +6,10 @@ body {
 
 /* Navbar */
 .navbar {
-  position: fixed;
   top: 20px;
   left: 50%;
-  transform: translateX(-50%);
   padding: 10px 20px;
-  border-radius: 50px;
+  border-top:5px solid red;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -53,7 +51,7 @@ section{
   align-items: center;
   direction:center;
   padding:110px 0px;
-  margin:auto;
+  margin-top:-100px;
   max-width:1200px;
 }
 
@@ -164,15 +162,16 @@ img {
   align-items: center;
   border-radius:50px;
   padding:10px 100px;
-  margin:300px 100px;
+  margin:100px 100px;
+  margin-top:0px;
   max-width:100px;
   gap:20px;
-   cursor:pointer;
 }
 .sas:hover{
   
     background:red;
   color:white;
+  cursor:pointer;
 }
 .o{
   width:150px;
