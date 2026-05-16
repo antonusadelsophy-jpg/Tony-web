@@ -1,0 +1,263 @@
+ <!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>موقع الباقات</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background:#0f172a;
+        color:white;
+        direction:rtl;
+    }
+
+    /* NAVBAR */
+    nav{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px 40px;
+        background:#111827;
+        position:sticky;
+        top:0;
+        z-index:1000;
+    }
+  
+    nav .logo{
+        font-size:22px;
+        color:#38bdf8;
+        font-weight:bold;
+    }
+
+  nav a{
+ text-decoration:none;
+ color:red;
+  display:flex;
+ list-style:none;
+  gap:20px;
+    }
+
+ nav a{
+   cursor:pointer;
+   color:#cbd5e1;
+    transition:0.3s;
+    }
+
+    nav a:hover{
+        color:#38bdf8;
+    }
+
+    /* HERO */
+    .hero{
+        height:90vh;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        padding:20px;
+        background:linear-gradient(to bottom, #0f172a, #111827);
+    }
+
+    .hero h1{
+        font-size:50px;
+        color:#38bdf8;
+        margin-bottom:15px;
+    }
+
+    .hero p{
+        font-size:18px;
+        color:#cbd5e1;
+        max-width:600px;
+    }
+
+    .hero button{
+        margin-top:20px;
+        padding:12px 25px;
+        border:none;
+        border-radius:10px;
+        background:#22c55e;
+        cursor:pointer;
+        font-weight:bold;
+        transition:0.3s;
+    }
+
+    .hero button:hover{
+        background:#16a34a;
+        transform:scale(1.05);
+    }
+
+    /* PACKAGES */
+    .section-title{
+        text-align:center;
+        font-size:32px;
+        margin:50px 0 20px;
+        color:#38bdf8;
+    }
+
+    .container{
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:20px;
+        padding:20px 40px 60px;
+    }
+
+    .card{
+        background:#1e293b;
+        width:280px;
+        padding:25px;
+        border-radius:15px;
+        text-align:center;
+        transition:0.3s;
+        box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .card:hover{
+        transform:scale(1.05);
+    }
+
+    .price{
+        font-size:30px;
+        color:#22c55e;
+        margin:15px 0;
+    }
+
+    ul{
+        list-style:none;
+        color:#cbd5e1;
+        line-height:2;
+    }
+
+    button{
+        margin-top:15px;
+        padding:10px 20px;
+        border:none;
+        border-radius:10px;
+        cursor:pointer;
+        background:#38bdf8;
+        font-weight:bold;
+        transition:0.3s;
+    }
+
+    button:hover{
+    background:green;
+    color:red;
+     }
+
+    .highlight{
+        border:2px solid #22c55e;
+    }
+
+    /* FOOTER */
+    footer{
+        text-align:center;
+        padding:20px;
+        background:#111827;
+        color:#94a3b8;
+    }
+
+    /* MOBILE */
+    @media(max-width:768px){
+        nav ul{
+            display:none;
+        }
+
+        .hero h1{
+            font-size:35px;
+        }
+    }
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+ <div class="logo">TONY WEB</div>
+ <div class="sidebar" id="sidebar">
+  <a href="index.html">الرئيسية</a>
+  <a href="services.html">الخدمات</a>
+  <a href="contact1.html"> تواصل معانا</a>
+</div>
+
+<button onclick="toggleSidebar()">☰</button>
+<script>
+function toggleSidebar(){
+  document.getElementById("sidebar").classList.toggle("show");
+}
+</script>
+<style>
+.sidebar{
+  position:fixed;
+  right:-200px;
+  top:0;
+  width:200px;
+  height:100%;
+  background:#111827;
+  padding:20px;
+  transition:0.3s;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.sidebar a{
+  color:white;
+  text-decoration:none;
+}
+
+.sidebar.show{
+  right:0;
+}
+</style>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>صمم موقعك الاحترافي دلوقتي</h1>
+    <p>نقدملك أفضل باقات تصميم مواقع احترافية بأسعار مناسبة تبدأ من 500 جنيه فقط 🚀</p>
+    <button>ابدأ الآن</button>
+</section>
+
+<!-- PACKAGES -->
+<h2 class="section-title">الباقات</h2>
+
+<div class="container">
+
+    <div class="card">
+        <h2>الباقة الأساسية</h2>
+        <div class="price">500 جنيه</div>
+        <ul>
+            <li>صفحة واحدة</li>
+            <li>تصميم بسيط</li>
+            <li>متوافق مع الموبايل</li>
+        </ul>
+        <button>اطلب الآن</button>
+    </div>
+
+    <div class="card highlight">
+        <h2>الباقة المتوسطة</h2>
+        <div class="price">700 جنيه</div>
+     <ul>
+   <li>حتى 3 صفحات</li>
+   <li>تصميم احترافي</li>
+    <li>سرعة عالية</li>
+    </ul>
+   <button>الأكثر طلبًا</button>
+    </div>
+   <div class="card">
+   <h2>الباقة الاحترافية</h2>
+   <div class="price">1000 جنيه</div>
+<ul>
+ <li>حتى 5 صفحات</li>
+ <li>تواصل سريع</li>
+ <li>اضافات اكتر</li>

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="rss.xml">
- <link rel="icon" type="an.png" href="favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
 <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="atom.xml">
 <title>تصميم مواقع احترافية في مصر | Tony Web</title>
 
@@ -41,18 +41,103 @@
 <body>
   <nav class="navbar">
   <ul>
-    <li><a href="#">Home</a></li>
+    <li><a href="offers.html">offers</a></li>
     <li><a href="services.html">Services</a></li>
      <li><a href="contact1.html">Contact</a></li>
    </ul>
-  <details><summary class="su">!من نحن
-   </summary>
+  <div class="sidebar" id="sidebar">
+  <a href="index.html">الرئيسية</a>
+  <a href="offers.html">الباقات</a>
+  <a href="services.html">الخدمات</a>
+  <a href="contact1.html">تواصل</a>
+  
   <a href="tel:201206014362">اتصل بنا</a>
   <a href="services.html">خدماتنا</a>
-  </details>
-</nav>
+</div>
 
+<button onclick="toggleSidebar()"class="teto">☰</button>
+<script>
+function toggleSidebar(){
+  document.getElementById("sidebar").classList.toggle("show");
+}
+</script>
+<style>
+.teto{
+  font-size:25px;
+  background:red;
+  color:white;
+  border-color:gold;
+}
+.sidebar{
+  position:fixed;
+  right:-200px;
+  top:0;
+  width:150px;
+  height:100%;
+  background:#ff0808;
+  padding:20px;
+  transition:0.3s;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.sidebar a{
+  color:white;
+  text-decoration:none;
+}
+
+.sidebar.show{
+  right:0;
+}
+</style>
+</nav>
 <section>
+<h1 class="typing"></h1>
+
+<script>
+
+const texts = [
+
+"موقعنا يقدم لكم تصميمات مواقع جذابة",
+"تصميم احترافي وسرعة عالية",
+"متوافق مع جميع الهواتف",
+"واجهات عصرية وتجربة مستخدم رائعة",
+"تحسين مواقع",
+"اسعار مناسبة"
+
+];
+let speed = 100;
+let textIndex = 0;
+let charIndex = 0;
+const typingText = document.querySelector(".typing");
+function type(){
+    if(charIndex < texts[textIndex].length){
+        typingText.textContent += texts[textIndex].charAt(charIndex);
+        charIndex++;
+       setTimeout(type , speed);
+    }else{
+        setTimeout(erase , 1500);   }}
+function erase(){
+ if(charIndex > 0){
+ typingText.textContent =
+ texts[textIndex].substring(0 , charIndex - 1);
+ charIndex--;
+  setTimeout(erase , 50);
+ }else{
+ textIndex++;
+  if(textIndex >= texts.length){
+  textIndex = 0;
+  } setTimeout(type , 500);
+    }
+}
+
+type();
+
+</script>
+
+</section> 
+ <section>
   <img src="a.jpg" alt="logo">
   </section>
 <div class="o"><a href="services.html">★Tony web </a></div>
