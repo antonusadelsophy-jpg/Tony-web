@@ -138,24 +138,32 @@
     }
 
     button{
-        margin-top:15px;
-        padding:10px 20px;
-        border:none;
-        border-radius:10px;
-        cursor:pointer;
-        background:#38bdf8;
-        font-weight:bold;
-        transition:0.3s;
-    }
-
+   margin-top:15px;
+   padding:10px 20px;
+  border:none;
+   border-radius:10px;
+   cursor:pointer;
+   background:#38bdf8;
+    font-weight:bold;
+    transition:0.3s;
+  }
     button:hover{
     background:green;
     color:red;
      }
-
+button a{
+  text-decoration:none;
+  color:red;
+}
+.ease{
+  border:2px solid red;
+}
     .highlight{
         border:2px solid #22c55e;
     }
+  .plus{
+    border:2px solid Orange;
+  }
 
     /* FOOTER */
     footer{
@@ -233,7 +241,7 @@ function toggleSidebar(){
 
 <div class="container">
 
-    <div class="card">
+    <div class="card ease">
         <h2>الباقة الأساسية</h2>
         <div class="price">500 جنيه</div>
         <ul>
@@ -241,7 +249,7 @@ function toggleSidebar(){
             <li>تصميم بسيط</li>
             <li>متوافق مع الموبايل</li>
         </ul>
-        <button>اطلب الآن</button>
+        <button><a href="https://wa.me/201206014362">اطلب الآن</a></button>
     </div>
 
     <div class="card highlight">
@@ -252,12 +260,13 @@ function toggleSidebar(){
    <li>تصميم احترافي</li>
     <li>سرعة عالية</li>
     </ul>
-   <button>الأكثر طلبًا</button>
+   <button><a href="https://wa.me/201206014362">الأكثر طلبًا</a></button>
     </div>
-   <div class="card">
+   <div class="card plus">
    <h2>الباقة الاحترافية</h2>
    <div class="price">1000 جنيه</div>
-<ul>
+ <ul>
  <li>حتى 5 صفحات</li>
  <li>تواصل سريع</li>
  <li>اضافات اكتر</li>
+ <button><a href="https://wa.me/201206014362">تواصل الآن</a></button>

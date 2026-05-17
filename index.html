@@ -39,42 +39,124 @@
   <link rel="stylesheet" href="style.css">
  </head>
 <body>
-  <nav class="navbar">
-  <ul>
-    <li><a href="offers.html">offers</a></li>
+
+  <nav>
+ <div class="logo">TONY WEB</div>
+ <div class="sidebar" id="sidebar">
+       <nav class="navbar">
+  <a href="index.html">الرئيسية</a>
+  <a href="services.html">الخدمات</a>
+  <a href="contact1.html"> تواصل معانا</a>
+    <a href="offers.html">offers</a>
     <li><a href="services.html">Services</a></li>
      <li><a href="contact1.html">Contact</a></li>
-   </ul>
-  <div class="sidebar" id="sidebar">
-  <a href="index.html">الرئيسية</a>
-  <a href="offers.html">الباقات</a>
-  <a href="services.html">الخدمات</a>
-  <a href="contact1.html">تواصل</a>
-  
-  <a href="tel:201206014362">اتصل بنا</a>
-  <a href="services.html">خدماتنا</a>
+  <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+.rating-box{
+
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+
+    padding:40px;
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:0 8px 30px rgba(0,0,0,0.4);
+}
+
+h2{
+    color:white;
+    font-size:15px;
+    margin-bottom:18px;
+}
+
+.rating{
+    display:flex;
+    gap:12px;
+    justify-content:center;
+}
+
+.star{
+    font-size:20px;
+    color:gray;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.star:hover{
+    transform:scale(1.2);
+}
+
+.star.active{
+    color:gold;
+}
+</style>
+<div class="rating-box">
+
+    <h2>قيم خدماتنا</h2>
+
+    <div class="rating">
+
+        <span class="star" onclick="rate(1)">★</span>
+        <span class="star" onclick="rate(2)">★</span>
+        <span class="star" onclick="rate(3)">★</span>
+        <span class="star" onclick="rate(4)">★</span>
+        <span class="star" onclick="rate(5)">★</span>
+
+    </div>
+
+    <p id="result"></p>
+
 </div>
 
-<button onclick="toggleSidebar()"class="teto">☰</button>
+<script>
+
+function rate(number){
+
+    let stars = document.querySelectorAll(".star");
+
+    stars.forEach((star,index)=>{
+
+        if(index < number){
+            star.classList.add("active");
+        }else{
+            star.classList.remove("active");
+        }
+
+    });
+
+    document.getElementById("result").innerText =
+    "شكراً لتقييمك " + number + " نجوم ⭐";
+
+}
+
+</script>
+  
+  </nav>
+</div>
+
+<button onclick="toggleSidebar()"
+class="teto">☰</button>
 <script>
 function toggleSidebar(){
   document.getElementById("sidebar").classList.toggle("show");
 }
 </script>
-<style>
-.teto{
-  font-size:25px;
-  background:red;
-  color:white;
-  border-color:gold;
-}
+<style> 
 .sidebar{
   position:fixed;
   right:-200px;
   top:0;
-  width:150px;
+  width:200px;
   height:100%;
-  background:#ff0808;
+  background:#111827;
   padding:20px;
   transition:0.3s;
   display:flex;

@@ -3,7 +3,53 @@ body {
   font-family: Arial;
   background: linear-gradient(135deg, #5f5fff, #7b2ff7);
 }
+    /* NAVBAR */
+  .teto{
+  color: red;
+  text-align:center;
+  height:20px;
+  margin-left:0px;
+  margin-top:0px;
+  font-size:25px;
+  background:#04003cb7;
+ transform:translateX(-300px);
+  }
+    nav{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px 40px;
+        background:#111827;
+        position:sticky;
+        top:0;
+        z-index:1000;
+    }
+  
+    nav .logo{
+   font-size:22px;
+   color:#38bdf8;
+   font-weight:bolder;
+  transform:translateX(150px);
+    }
 
+  nav a{
+ text-decoration:none;
+ color:red;
+  display:flex;
+ list-style:none;
+  gap:20px;
+    }
+
+ nav a{
+   cursor:pointer;
+   color:#cbd5e1;
+    transition:0.3s;
+    }
+
+    nav a:hover{
+        color:#38bdf8;
+    }
+    
 .typing{
     color:red;
     font-size:25px;
@@ -197,21 +243,21 @@ img {
   animation-name: tony;
   animation-duration: 4s;
   animation-delay:2s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;animation-play-state:paused;
   animation-iteration-count: infinite;
   animation-direction:narmal;
 }
 @keyframes tony {
   0% {
   color: red;
-  left: 25%;
-  transform:rotate(180deg)a;
- }
+  left:0%;
+  transform:translateX(0%);
+  }
   100% {
     color:green;
-    left:25%;
-    transform:rotate(360deg);
-   }
+    left:100%;
+  transform:translateX(100%);
+    }
 }
 div a{
   text-decoration:none;
@@ -287,5 +333,7 @@ cursor:pointer;
   font-size:25px;
   text-align:center;
 }
+
+
 
 
