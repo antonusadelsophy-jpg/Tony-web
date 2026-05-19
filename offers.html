@@ -21,15 +21,23 @@
 
     /* NAVBAR */
     nav{
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        padding:15px 40px;
-        background:#111827;
-        position:sticky;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  background:#111827;
+  position:sticky;
         top:0;
         z-index:1000;
     }
+   nav .img{
+  width:80px;
+  position: absolute;
+  top:0px;
+  left: 300px;
+  border-radius:150px;
+  transform:scale(.5);
+   }
   
     nav .logo{
         font-size:22px;
@@ -112,20 +120,22 @@
     }
 
     .card{
-        background:#1e293b;
-        width:280px;
-        padding:25px;
-        border-radius:15px;
-        text-align:center;
-        transition:0.3s;
-        box-shadow:0 10px 25px rgba(0,0,0,0.3);
+  background:#1e293b;
+  width:280px;
+  padding:25px;
+  border-radius:15px;
+   text-align:center;
+   transition:0.3s;
+  animation-name:card;
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
     }
 
     .card:hover{
         transform:scale(1.05);
+    box-shadow:0 0 30px red;
+    
     }
-
-    .price{
+     .price{
         font-size:30px;
         color:#22c55e;
         margin:15px 0;
@@ -183,6 +193,7 @@ button a{
             font-size:35px;
         }
     }
+    
 </style>
 
 </head>
@@ -190,6 +201,7 @@ button a{
 
 <!-- NAVBAR -->
 <nav>
+    <img src="log.jpg" alt="img logo" class="img">
  <div class="logo">TONY WEB</div>
  <div class="sidebar" id="sidebar">
   <a href="index.html">الرئيسية</a>
