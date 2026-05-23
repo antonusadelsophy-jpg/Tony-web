@@ -100,7 +100,7 @@
 
     .hero button:hover{
         background:#16a34a;
-        transform:scale(1.05);
+        transform:scale(1.15);
     }
 
     /* PACKAGES */
@@ -148,7 +148,8 @@
     }
 
     button{
-   margin-top:15px;
+   margin-top:3px;
+   margin-left:-40px;
    padding:10px 20px;
   border:none;
    border-radius:10px;
@@ -160,6 +161,8 @@
     button:hover{
     background:green;
     color:red;
+    box-shadow:0 0 30px green;
+    transform:scale(1.15)
      }
 button a{
   text-decoration:none;
@@ -168,9 +171,18 @@ button a{
 .ease{
   border:2px solid red;
 }
+.ease:hover{
+  box-shadow:0 0 30px red;
+}
     .highlight{
         border:2px solid #22c55e;
     }
+  .highlight:hover{
+  box-shadow:0 0 30px green;
+}
+.plus:hover{
+  box-shadow:0 0 30px gold;
+}
   .plus{
     border:2px solid Orange;
   }
@@ -193,7 +205,12 @@ button a{
             font-size:35px;
         }
     }
-    
+.typing{
+  color:red;
+  font-family:Arial;
+  font-size:30px;
+  transform:translateY(100px);
+  }
 </style>
 
 </head>
@@ -222,7 +239,7 @@ function toggleSidebar(){
   top:0;
   width:200px;
   height:100%;
-  background:#111827;
+  background:linear-gradient(#710000bc,#10006abc);
   padding:20px;
   transition:0.3s;
   display:flex;
@@ -231,7 +248,8 @@ function toggleSidebar(){
 }
 
 .sidebar a{
-  color:white;
+  background:red;
+  color:gold;
   text-decoration:none;
 }
 
@@ -245,9 +263,46 @@ function toggleSidebar(){
 <section class="hero">
     <h1>صمم موقعك الاحترافي دلوقتي</h1>
     <p>نقدملك أفضل باقات تصميم مواقع احترافية بأسعار مناسبة تبدأ من 500 جنيه فقط 🚀</p>
-    <button>ابدأ الآن</button>
-</section>
+ <div class="typing"></div>
+ </section>
+<script>
 
+const texts = [
+"اختر باقتك",
+"تصميم بسيط",
+"تصميم احترافي",
+"تصميم جذاب",
+" تواصل معنا الأن مع ",
+"TONY WEB",
+];
+let speed = 180;
+let textIndex = 0;
+let charIndex = 0;
+const typingText = document.querySelector(".typing");
+function type(){
+    if(charIndex < texts[textIndex].length){
+        typingText.textContent += texts[textIndex].charAt(charIndex);
+        charIndex++;
+       setTimeout(type , speed);
+    }else{
+        setTimeout(erase , 1500);   }}
+function erase(){
+ if(charIndex > 0){
+ typingText.textContent =
+ texts[textIndex].substring(0 , charIndex - 1);
+ charIndex--;
+  setTimeout(erase , 50);
+ }else{
+ textIndex++;
+  if(textIndex >= texts.length){
+  textIndex = 0;
+  } setTimeout(type , 500);
+    }
+}
+
+type();
+
+</script>
 <!-- PACKAGES -->
 <h2 class="section-title">الباقات</h2>
 
