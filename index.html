@@ -68,6 +68,8 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
     <a href="offers.html">offers</a>
     <a href="services.html">Services</a>
     <a href="contact1.html">Contact</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="about ar.html">مَن نحن</a>
   <style>
 
 *{
@@ -169,7 +171,30 @@ function toggleSidebar(){
 </script>
 <style> 
 .sidebar{
-  position:fixed;
+  
+}
+
+.sidebar a{
+  color:white;
+  text-decoration:none;
+}
+
+.sidebar.show{
+  right:0;
+}.sidebar::-webkit-scrollbar{
+    width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+    background: #00bfff;
+    border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-track{
+    background: transparent;
+}
+.sidebar{
+position:fixed;
   right:-200px;
   top:0;
   width:200px;
@@ -180,15 +205,8 @@ function toggleSidebar(){
   display:flex;
   flex-direction:column;
   gap:15px;
-}
-
-.sidebar a{
-  color:white;
-  text-decoration:none;
-}
-
-.sidebar.show{
-  right:0;
+    overflow-y: auto;    /* ده اللي بيخلي السحب يشتغل */
+    overflow-x: hidden;
 }
 </style>
 </nav>
@@ -198,8 +216,8 @@ function toggleSidebar(){
 <script>
 
 const texts = [
-
-"موقعنا يقدم لكم تصميمات مواقع جذابة",
+"TONY WEB",
+" يقدم لكم تصميمات مواقع جذابة",
 "تصميم احترافي وسرعة عالية",
 "متوافق مع جميع الهواتف",
 "واجهات عصرية وتجربة مستخدم رائعة",
@@ -289,8 +307,7 @@ type();
 <a class="btn" href="offers.html">ابدا دلوقتي</a>
 <header>
 </header>
-<footer class="q"><p>©Tony web 2026</p></footer>
-
+<footer class="q"><p>©Tony web 2026</p><a href="privacy.html"class="pr">Privacy Policy</a></footer>
 
 
 

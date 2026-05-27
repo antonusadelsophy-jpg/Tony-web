@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Tony Web</title>
+<style>
+body{
+    font-family: Arial;
+    background:#111;
+    color:white;
+    padding:40px;
+    line-height:1.8;
+}
+.container{
+    max-width:800px;
+    margin:auto;
+}
+h1{
+    color:#00bfff;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>About Us</h1>
+
+    <p>
+        Welcome to Tony Web.
+    </p>
+<!-- زر الترجمة -->
+<div class="translate-box">
+    <select id="languageSwitcher">
+        <option value="en">English</option>
+        <option value="ar">العربية</option>
+    </select>
+</div>
+
+<style>
+.translate-box{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    background: rgba(200,20,20,0.9);
+    padding: 2px;
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px red;
+}
+
+.translate-box select{
+    background: #111;
+    color: white;
+    border: 1px solid #cbcbcb;
+    padding: 8px 12px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+</style>
+
+<script>
+document.getElementById("languageSwitcher").addEventListener("change", function () {
+
+    const lang = this.value;
+
+    if(lang === "ar"){
+        document.body.style.direction = "rtl";
+        document.body.style.textAlign = "right";
+    }else{
+        document.body.style.direction = "ltr";
+        document.body.style.textAlign = "left";
+    }
+
+});
+</script>
+    <p>
+        Tony Web is a modern website that provides web design,
+        creative solutions, and digital services with a simple and professional experience.
+    </p>
+
+    <p>
+        Our goal is to create fast, responsive, and user-friendly websites
+        that help people and businesses grow online.
+    </p>
+
+    <p>
+        We focus on quality, creativity, and improving user experience
+        across all devices.
+    </p>
+
+    <p>
+        Thank you for visiting Tony Web.
+    </p>
+</div>
+
+</body>
+</html>

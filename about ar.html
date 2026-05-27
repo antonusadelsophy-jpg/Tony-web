@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>من نحن | Tony Web</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Cairo',sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+/* خلفية */
+.bg{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:
+    radial-gradient(circle at top right,#00bfff22,transparent 30%),
+    radial-gradient(circle at bottom left,#0084ff22,transparent 30%);
+    z-index:-1;
+}
+
+/* النافبار */
+nav{
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    backdrop-filter:blur(10px);
+    background:rgba(255,255,255,0.03);
+    border-bottom:1px solid rgba(255,255,255,0.05);
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#00bfff;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-right:20px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00bfff;
+}
+
+/* المحتوى */
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:80px 0;
+}
+
+.hero{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+    background:linear-gradient(to right,#00bfff,#0084ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+    color:#bbb;
+    line-height:2;
+    font-size:18px;
+}
+
+/* الكروت */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.06);
+    padding:30px;
+    border-radius:22px;
+    transition:0.4s;
+    backdrop-filter:blur(10px);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#00bfff;
+    box-shadow:0 0 25px #00bfff33;
+}
+
+.card h2{
+    color:#00bfff;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#ccc;
+    line-height:1.9;
+}
+
+/* زر */
+.btn{
+    display:inline-block;
+    margin-top:50px;
+    background:linear-gradient(to right,#00bfff,#0084ff);
+    color:white;
+    padding:14px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+.btn:hover{
+    transform:scale(1.07);
+    box-shadow:0 0 20px #00bfff88;
+}
+
+/* الفوتر */
+footer{
+    margin-top:80px;
+    text-align:center;
+    padding:30px;
+    color:#777;
+    border-top:1px solid rgba(255,255,255,0.05);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<nav>
+    <div class="logo">Tony Web</div>
+
+    <div>
+        <a href="index.html">الرئيسية</a>
+        <a href="about.html">من نحن</a>
+        <a href="privacy.html">الخصوصية</a>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="hero">
+        <h1>من نحن</h1>
+
+        <p>
+            مرحبًا بك في Tony Web 🚀  
+            نحن نقدم حلول تصميم وبرمجة مواقع عصرية
+            بسرعة عالية وتجربة استخدام احترافية تناسب جميع الأجهزة.
+        </p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>تصميم عصري</h2>
+            <p>
+                نهتم بتقديم تصميمات حديثة وجذابة
+                تمنح المستخدم تجربة مميزة واحترافية.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>سرعة وأداء</h2>
+            <p>
+                نقوم بتطوير مواقع سريعة وخفيفة
+                لتحسين تجربة المستخدم ونتائج البحث.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>دعم كامل</h2>
+            <p>
+                نعمل على تطوير وتحسين المواقع باستمرار
+                لضمان أفضل أداء وجودة ممكنة.
+            </p>
+        </div>
+        <div class="card">
+            <h2>صيانة المواقع</h2>
+            <p>
+ نعمل علي صيانة وتحسين شكل وصورة الموقع لجذب العملاء 
+              </p>
+        </div>
+
+    </div>
+
+    <center>
+        <a href="index.html" class="btn">
+            العودة للرئيسية
+        </a>
+    </center>
+
+</div>
+
+<footer>
+    © 2026 Tony Web - جميع الحقوق محفوظة
+</footer>
+
+</body>
+</html>

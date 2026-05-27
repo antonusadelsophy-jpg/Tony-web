@@ -3,7 +3,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>تواصل  معانا الآن</title>  <!-- SEO -->  <meta name="description" content="احصل على موقع احترافي لعرض أعمالك وزيادة مبيعاتك.">
-  <meta name="keywords" content="تصميم مواقع, عمل موقع, برمجة مواقع">  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">  <style>
+  <meta name="keywords" content="تصميم مواقع, عمل موقع, برمجة مواقع">  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
     *{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo',sans-serif}
     body{background:#0f172a;color:#fff}
 
@@ -26,7 +28,11 @@
    }
     .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
     .card{background:#1e293b;padding:20px;border-radius:15px}
-
+   .card:hover{
+    transform:scale(1.1);
+    border:2px red solid ;
+    box-shadow:0 10px 20px red;
+   }
     .portfolio img{width:100%;border-radius:10px}
 
     .pricing{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
@@ -70,15 +76,18 @@
 .navbar a:hover {
   background:rgba(255,18,18);
 }
-.s{color:red;
+.s{
+  color:red;
   font-family:serif,Arial;
   font-width:15px;
-  
-  background:rgb(80,34,0);
-  height:380px;
-  width
+ background:pink;
+   height:380px;
+   width
   padding:200px 80px;
- 
+}
+section h1{
+  color:red;
+  transform:translateY(120px);
 }
  .bot{
   background:#001685;
@@ -116,7 +125,41 @@ color:red; }
   cursor:pointer;
   border:red 1px solid;
 }
-  </style></head>
+.float-btn{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+    z-index: 9999;
+}
+
+/* WhatsApp */
+.whatsapp{
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+}
+
+/* Facebook */
+.facebook{
+    bottom: 90px;
+    right: 20px;
+    background: #1877F2;
+}
+
+.float-btn:hover{
+    transform: scale(1.15);
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}  
+ </style></head>
 <body>
   
   <nav class="navbar">
@@ -134,18 +177,25 @@ color:red; }
   <h2>خلي عندك موقع يبيع بدل ما يضيع 🔥</h2>
   <p>تصميم مواقع احترافية لأي نشاط</p>
   <a href="https://wa.me/201206014362" class="btn">ابدأ دلوقتي</a>
+  <!-- WhatsApp -->
+<a href="https://wa.me/201206014362" class="float-btn whatsapp" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- Facebook -->
+<a href="https://www.facebook.com/share/1Cp1jZHdui/" class="float-btn facebook" target="_blank">
+    <i class="fa-brands fa-facebook-f"></i>
+</a>
 </section><section id="services">
   <a href="services.html"><h2>الخدمات</h2></a>
   <div class="cards">
     <div class="card"><h3>تصميم مواقع</h3><p>شكل احترافي</p></div>
     <div class="card"><h3>SEO</h3><p>تتصدر جوجل</p></div>
     <div class="card"><h3>سرعة</h3><p>تحميل سريع</p></div>
+    <div class="card"><h3>توفير اكتر!</h3><p>وفير اكتر واختر باقتك</p></div>
   </div>
- <section id="contact">
-  <h2>تواصل معايا</h2>
-  <p>ooo </p>
-  <a href="https://wa.me/201206014362" class="btn">واتساب</a>
-</section><!-- صفحة تواصل احترافية --><section id="contact-page" style="padding:60px 20px;margin-bottom:-200px;
+  <!-- صفحة تواصل احترافية -->
+  <section id="contact-page" style="padding:60px 20px;margin-bottom:-100px;margin-top:100px;
   text-align:center;background:#020617;">
   <h2 style="margin-bottom:20px">تواصل معايا 🚀</h2>
   <p style="margin-bottom:30px">سيب بياناتك وهرد عليك في أسرع وقت</p>  
@@ -164,10 +214,46 @@ color:red; }
   
   
     <p>أو تواصل مباشر:</p>
-    <a href="https://wa.me/201206014362" class="btn" style="margin:10px;display:inline-block">واتساب</a>
-    <a href="https://www.facebook.com/Antonusadel.012?mibextid=ZbWKwL" class="btn" style="margin:10px;display:inline-block;background:#1877f2;color:#fff">فيسبوك</a>
+    <a href="https://wa.me/201206014362" class="btn" style="margin:10px;display:inline-block"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="https://www.facebook.com/Antonusadel.012?mibextid=ZbWKwL" class="btn" style="margin:10px;display:inline-block;background:#1877f2;color:#fff"><i class="fa-brands fa-facebook"></i></a>
   <p>© 2026 Antonus</p>
 </div>
 </section>
+<a href="tel:+201206014362" class="call-btn">
+<i class="fa-brands fa-tel"></i>Ŧ</a>
+<style>
+.call-btn{
+    position: fixed;
+    bottom: 152px;
+    right: 18px;
+
+    width: 60px;
+    height: 60px;
+
+    background:rgba(0,11,247,0.476);
+    color:red;
+
+    border-radius: 50%;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+
+    z-index: 9999;
+
+    transition: 0.3s;
+}
+
+.call-btn:hover{
+    transform: scale(1.1);
+    background: #333;
+}
+</style>
 </body>
 </html>

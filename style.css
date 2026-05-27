@@ -59,6 +59,9 @@ body {
     
 .typing{
     color:red;
+    background:#cbcbcb;
+    box-shadow:0px 10px 10px #cbcbcb;
+    border-radius:100px;
     font-size:25px;
     font-family:Arial,Cairo;
     border-right:2px solid green;
@@ -234,6 +237,13 @@ img {
   color:white;
   cursor:pointer;
 }
+.pr{
+  text-decoration:red;
+  text-align:center;
+  direction:center;
+  font-family:Arial;
+  transform:translateX(150px);
+}
 .gradient-text{
 
     font-size:70px;
@@ -280,7 +290,8 @@ img {
     display:inline-block;
     padding:20px 20px;
     margin-bottom:100px;
-    font-size:60px;
+    font-size:30px;
+    width:100%;
     direction:center;
     font-weight:bold;
     color:red;
@@ -301,25 +312,21 @@ transform:translateY(270px);
 
     border-radius:20px;
 
-    background:linear-gradient(
-   90deg,
- transparent,
- #fe22ff,
- transparent,#fe23ff
-    );
-
-    animation:rotate 2s linear infinite;
+    background:#cbcbcb;
+     animation:rotate 4s linear infinite;
 
     z-index:-1;
 }
 @keyframes rotate{
 
     0%{
-        transform:rotate(0deg);
+     transform:translateX(0%);
     }
-
+50%{
+  transform:translateX(100%);
+}
     100%{
-        transform:rotate(360deg);
+        transform:translateX(0%);
     }
 
 }
