@@ -84,8 +84,6 @@ class="statcounter" src="https://c.statcounter.com/13248651/0/f437d3bc/1/"
 alt="Web Analytics Made Easy - Statcounter"
 referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- End of Statcounter Code -->
-  <link rel="icon" sizes="32x32" href="https://raw.githubusercontent.com/antonusadelsophy-jpg/Tony-web/main/favicon.ico">
-<link rel="icon" sizes="16x16" href="https://raw.githubusercontent.com/antonusadelsophy-jpg/Tony-web/main/favicon.ico">
  </head>
 <body>
 
@@ -249,7 +247,7 @@ position:fixed;
 <script>
 
 const texts = [
-"TONY WEB",
+"TONY CODE",
 " يقدم لكم تصميمات مواقع جذابة",
 "تصميم احترافي وسرعة عالية",
 "متوافق مع جميع الهواتف",
@@ -327,9 +325,36 @@ type();
     background: #333;
 }
 </style>
-<h1 class="border-text">
-    TONY WEB
-</h1>
+<h1 class="spotlight" data-text="TONY CODE">TONY CODE</h1>
+
+<script>
+const spotlight = document.querySelector(".spotlight");
+
+function moveLight(x, y){
+    const rect = spotlight.getBoundingClientRect();
+
+    spotlight.style.setProperty(
+        "--x",
+        ((x - rect.left) / rect.width) * 100 + "%"
+    );
+
+    spotlight.style.setProperty(
+        "--y",
+        ((y - rect.top) / rect.height) * 100 + "%"
+    );
+}
+
+document.addEventListener("mousemove", (e)=>{
+    moveLight(e.clientX, e.clientY);
+});
+
+document.addEventListener("touchmove", (e)=>{
+    moveLight(
+        e.touches[0].clientX,
+        e.touches[0].clientY
+    );
+});
+</script>
 
  <div class="z"><p>هل موقعك الحالي لا يجذب العملاء كما تتمنى؟ حان وقت التغيير. نحن نصمم مواقع احترافية سريعة وجذابة تعمل بكفاءة على جميع الأجهزة، وتركّز على تحويل الزائر إلى عميل حقيقي. نقدم لك تصميم عصري، أداء قوي، وتجربة مستخدم مدروسة تساعدك على التميز أمام منافسيك وزيادة مبيعاتك. لا تضيع المزيد من الفرص—ابدأ الآن وامتلك موقعًا يرفع مستوى مشروعك ويضعك في المكانة التي تستحقها.</p><p>هل تبحث عن موقع احترافي يعكس شغلك ويجذب العملاء؟ نحن نقدم خدمات تصميم مواقع عصرية وسريعة تناسب جميع الأجهزة، مع اهتمام كامل بتجربة المستخدم وسهولة التصفح. نساعدك في تحويل فكرتك إلى موقع مميز يعبر عنك ويزيد من فرص نجاحك على الإنترنت، سواء كنت صاحب مشروع صغير أو شركة كبيرة. تواصل معنا الآن وابدأ رحلتك نحو التميز الرقمي!</p></div><br class="br">
 <a class="sas" href="loige in.html">سجل دخول الآن</a>
@@ -337,25 +362,17 @@ type();
 <hr>
 <div class="a">اختيار موقعك عندنا لأي مشروع أو !تسويق</div></br>
 <h3 class="w">👇👇👇</h3>
-<a class="btn" href="offers.html">ابدا دلوقتي</a>
-<header>
-</header>
-<footer class="q"><p>©Tony web 2026</p><a href="privacy.html"class="pr">Privacy Policy</a></footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<a class="btn" href="offers.html">ابدا الآن</a>
+<header></header>
+<section class="sac">
+<a class="pr"href="tel:+201206014362"> رقم التواصل</a><br>
+<a href="https://wa.me/201206014362" class="pr"><i class="fa-brands fa-whatsapp"></i>whatsapp</a><br>
+<a class="pr"href="about ar.html"> من نحن</a><br>
+<a class="pr" href="loige in.html">سجل دخولك الآن</a><br>
+<a href="privacy.html"class="pr">Privacy Policy</a><br>
+<a class="pr"href="https://wa.me/201206014362"><i class=""</a>
+</section>
+<p class="q">©Tony code 2026-جميع الحقوق محفوظة</p>
 
 
 
